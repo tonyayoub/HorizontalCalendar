@@ -14,12 +14,15 @@ let startingIndex = 400
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 
-
+    @IBAction func GoToToday(_ sender: Any) {
+        scrollToDate(date: Date())
+    }
+    
     @IBOutlet weak var selectedDate: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectDate(date: Date())
+        displayDate(date: Date())
        // selectedDate.text = "\(UsedDates.shared.displayedDateString)"
 
     }
@@ -36,11 +39,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         //highlight selected cell
         if let selectedCellDate = cell.date {
-            selectDate(date: selectedCellDate)
+            displayDate(date: selectedCellDate)
         }
     }
     
-    func selectDate(date: Date) {
+    func displayDate(date: Date) {
         UsedDates.shared.displayedDate = date
         UsedDates.shared.selectdDayOfWeek = Calendar.current.component(.weekday, from: date) //so that if the selected date is Wednesday, it keeps selecting Wednesday next week
         self.selectedDate.text = UsedDates.shared.displayedDateString
@@ -61,6 +64,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             let firstMondayIndexPath = IndexPath(row: scrolledNumberOfDays, section: 0)
             collectionView.scrollToItem(at: firstMondayIndexPath, at: .left , animated: false)
         }
+        displayDate(date: date)
     }
     
 
@@ -86,7 +90,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let middleCell = visibleCells[middleIndex] as! DateCollectionViewCell
         
         let displayedDate = UsedDates.shared.getDateOfAnotherDayOfTheSameWeek(selectedDate: middleCell.date!, requiredDayOfWeek: UsedDates.shared.selectdDayOfWeek)
-        selectDate(date: displayedDate)
+        displayDate(date: displayedDate)
     }
 
     

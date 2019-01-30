@@ -79,6 +79,13 @@
                                 <rect key="frame" x="0.0" y="264.5" width="834" height="847.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-b8-Xbs">
+                                <rect key="frame" x="396" y="274.5" width="42" height="30"/>
+                                <state key="normal" title="Today"/>
+                                <connections>
+                                    <action selector="GoToToday:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAB-uX-QNV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,11 +93,13 @@
                             <constraint firstItem="i9d-Ze-STM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4f1-Go-Lmr"/>
                             <constraint firstItem="IsB-Vy-qxe" firstAttribute="top" secondItem="i9d-Ze-STM" secondAttribute="bottom" id="4nM-Rd-eoD"/>
                             <constraint firstItem="IsB-Vy-qxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5DL-LP-Xw3"/>
+                            <constraint firstItem="rHz-b8-Xbs" firstAttribute="top" secondItem="IsB-Vy-qxe" secondAttribute="bottom" constant="10" id="6Lf-bm-yrl"/>
                             <constraint firstItem="i9d-Ze-STM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.12" id="6of-GI-Xvm"/>
                             <constraint firstItem="boz-Bm-umr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8sV-mq-20g"/>
                             <constraint firstItem="boz-Bm-umr" firstAttribute="top" secondItem="IsB-Vy-qxe" secondAttribute="bottom" id="AA6-4h-C07"/>
                             <constraint firstItem="i9d-Ze-STM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BmW-NL-WH2"/>
                             <constraint firstItem="IsB-Vy-qxe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="FKH-Y6-sDL"/>
+                            <constraint firstItem="rHz-b8-Xbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPd-5K-qgX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9d-Ze-STM" secondAttribute="trailing" id="PcE-ov-XTv"/>
                             <constraint firstItem="boz-Bm-umr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hnc-IO-NsU"/>
                             <constraint firstItem="IsB-Vy-qxe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wJW-5S-dXK"/>

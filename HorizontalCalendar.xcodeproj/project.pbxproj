@@ -14,6 +14,7 @@
 		F873ED6821FED9F600B355BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F873ED6621FED9F600B355BA /* LaunchScreen.storyboard */; };
 		F873ED7821FF1A0B00B355BA /* UsedDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED7721FF1A0B00B355BA /* UsedDates.swift */; };
 		F873ED7A21FF337400B355BA /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED7921FF337400B355BA /* DateCollectionViewCell.swift */; };
+		F89820842201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png in Resources */ = {isa = PBXBuildFile; fileRef = F89820832201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F873ED6921FED9F600B355BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F873ED7721FF1A0B00B355BA /* UsedDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDates.swift; sourceTree = "<group>"; };
 		F873ED7921FF337400B355BA /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		F89820832201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F873ED6621FED9F600B355BA /* LaunchScreen.storyboard */,
 				F873ED6921FED9F600B355BA /* Info.plist */,
 				F873ED7721FF1A0B00B355BA /* UsedDates.swift */,
+				F89820832201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png */,
 			);
 			path = HorizontalCalendar;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89820842201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png in Resources */,
 				F873ED6821FED9F600B355BA /* LaunchScreen.storyboard in Resources */,
 				F873ED6521FED9F600B355BA /* Assets.xcassets in Resources */,
 				F873ED6321FED9F500B355BA /* Main.storyboard in Resources */,
