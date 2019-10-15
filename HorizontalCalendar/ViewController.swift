@@ -23,21 +23,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         displayDate(date: Date())
-       // selectedDate.text = "\(UsedDates.shared.displayedDateString)"
-
     }
 
-
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
         scrollToDate(date: Date())
-
     }
     
     func selectCell(cell: DateCollectionViewCell) {
-        
-        //highlight selected cell
         if let selectedCellDate = cell.date {
             displayDate(date: selectedCellDate)
         }
@@ -66,8 +59,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         displayDate(date: date)
     }
-    
-
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         displayWeek()
@@ -93,8 +84,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         displayDate(date: displayedDate)
     }
 
-    
-
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let addedDays = indexPath.row
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dateReuseIdentifier, for: indexPath) as! DateCollectionViewCell
@@ -114,7 +103,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         return cell
     }
-    
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) as? DateCollectionViewCell {
@@ -125,8 +113,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
         }
     }
-
-
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
@@ -137,5 +123,4 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     {
         return 0
     }
-
 }

@@ -11,16 +11,12 @@ import Foundation
 extension Date {
     
     func interval(ofComponent comp: Calendar.Component, fromDate date: Date) -> Int {
-        
         let currentCalendar = Calendar.current
-        
         guard let start = currentCalendar.ordinality(of: comp, in: .era, for: date) else { return 0 }
         guard let end = currentCalendar.ordinality(of: comp, in: .era, for: self) else { return 0 }
-        
         return end - start
     }
 }
-
 
 class UsedDates {
     static let shared = UsedDates()
@@ -32,7 +28,6 @@ class UsedDates {
     init() {
         formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
-        
         displayedDate = startDate
     }
     
@@ -46,9 +41,7 @@ class UsedDates {
 
         //1/1/2001 is Monday that is important
         let res = Calendar.current.date(from: startComponents) ?? Date()
-        
         return res
-        
     }
     
     var endDate: Date {
@@ -109,11 +102,8 @@ class UsedDates {
         //if input date is Wed and required date is date of Monday so the diff will equal - 2
         let result = addDaysToDate(daysToAdd: diff, toDate: selectedDate)
         return result
-        
-        
     }
-    
-    
+
     func addDaysToDate(daysToAdd: Int, toDate: Date) -> Date {
         var addedDays = DateComponents()
         addedDays.day = daysToAdd
@@ -158,5 +148,4 @@ class UsedDates {
             
         }
     }
-    
 }

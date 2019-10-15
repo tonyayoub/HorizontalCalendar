@@ -14,7 +14,6 @@
 		F873ED6821FED9F600B355BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F873ED6621FED9F600B355BA /* LaunchScreen.storyboard */; };
 		F873ED7821FF1A0B00B355BA /* UsedDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED7721FF1A0B00B355BA /* UsedDates.swift */; };
 		F873ED7A21FF337400B355BA /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED7921FF337400B355BA /* DateCollectionViewCell.swift */; };
-		F89820842201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png in Resources */ = {isa = PBXBuildFile; fileRef = F89820832201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +104,7 @@
 				TargetAttributes = {
 					F873ED5921FED9F500B355BA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -131,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89820842201C1D8001DB21D /* Simulator Screen Shot - iPhone 8 - 2019-01-30 at 14.26.58.png in Resources */,
 				F873ED6821FED9F600B355BA /* LaunchScreen.storyboard in Resources */,
 				F873ED6521FED9F600B355BA /* Assets.xcassets in Resources */,
 				F873ED6321FED9F500B355BA /* Main.storyboard in Resources */,
@@ -303,7 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amahy.HorizontalCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amahy.HorizontalCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
